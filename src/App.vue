@@ -32,8 +32,8 @@ import Plus from 'vue-material-design-icons/Plus.vue';
           </div>
         </div>
 
-        <div class="absolute w-full h-screen flex items-center px-4 z-10">
-          <div class='w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black'>
+        <div class="absolute w-full h-screen flex items-center px-4 z-10 group">
+          <div class='opacity-1 w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black'>
 
           </div>
           <div class='w-[500px] h-[700px] mr-20 bg-white rounded-xl text-black'>
@@ -42,7 +42,7 @@ import Plus from 'vue-material-design-icons/Plus.vue';
               <p class='text-sm'>Joignez-vous aux <span class="font-bold">60 756</span> Lufavores qui mangent frais, local et responsable.</p>
               <form class='w-full flex flex-col py-1'>
                 <div class="flex items-center justify-between">
-                  <p>Prénom</p>
+                  <p>Prénom <span class="text-red-600">*</span></p>
                   <input
                     class='p-2 my-2 border rounded'
                     type="text"
@@ -50,7 +50,7 @@ import Plus from 'vue-material-design-icons/Plus.vue';
                   />
                 </div>
                 <div class="flex items-center justify-between">
-                  <p>Nom</p>
+                  <p>Nom <span class="text-red-600">*</span></p>
                   <input
                     class='p-2 my-2 border rounded'
                     type="text"
@@ -58,7 +58,7 @@ import Plus from 'vue-material-design-icons/Plus.vue';
                   />
                 </div>
                 <div class="flex items-center justify-between">
-                  <p>Courriel</p>
+                  <p>Courriel <span class="text-red-600">*</span></p>
                   <input
                     class='p-2 my-2 border rounded'
                     type="email"
@@ -67,7 +67,7 @@ import Plus from 'vue-material-design-icons/Plus.vue';
                   />
                 </div>
                 <div class="flex items-center justify-between">
-                  <p>Mot de passe</p>
+                  <p>Mot de passe <span class="text-red-600">*</span></p>
                   <input
                     class='p-2 my-2 border rounded'
                     type="password"
@@ -76,7 +76,7 @@ import Plus from 'vue-material-design-icons/Plus.vue';
                   />
                 </div>
                 <div class="flex items-center justify-between">
-                  <p>Téléphone</p>
+                  <p>Téléphone <span class="text-red-600">*</span></p>
                   <input
                     class='p-2 my-2 border rounded'
                     type="phone"
@@ -84,7 +84,7 @@ import Plus from 'vue-material-design-icons/Plus.vue';
                   />
                 </div>
                 <div class="flex items-center justify-between">
-                  <p>Adresse</p>
+                  <p>Adresse <span class="text-red-600">*</span></p>
                   <input
                     class='p-2 my-2 border rounded'
                     type="address"
