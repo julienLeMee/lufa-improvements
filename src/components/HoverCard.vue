@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
-    <p>{{ text }}</p>
-    <p>{{ description }}</p>
+  <div class="text-center p-8">
+    <h1 class="text-[#79a032] text-4xl font-bold pb-4" >{{ title }}</h1>
+    <p class="py-4">{{ text }}</p>
+    <p class="py-4">{{ description }}</p>
   </div>
 </template>
 
