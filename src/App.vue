@@ -23,25 +23,32 @@ const iconInfo = {
     // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     title: "Nos paniers hebdomadaires",
     text: "Du Marché en ligne à votre panier, frais, local et responsable.",
-    description: "Votre abonnement vient avec un panier de base automatique hebdomadaire rempli de 30 $ de fruits et légumes de saison, mais vous avez toujours le choix de personnaliser votre commande ou de l’annuler jusqu’à minuit la veille de votre livraison."
+    description: "Votre abonnement vient avec un panier de base automatique hebdomadaire rempli de 30 $ de fruits et légumes de saison, mais vous avez toujours le choix de personnaliser votre commande ou de l’annuler jusqu’à minuit la veille de votre livraison.",
+    text2: "SANS ENGAGEMENT"
   },
   Carrot: {
     // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    title: "Titre 2",
-    text: "Texte 2",
-    description: "Description 2"
+    title: "De nos toits à votre assiette",
+    text: "Chaque jour, nous livrons directement à notre communauté d’adeptes - les Lufavores! - des milliers de paniers d’épicerie contenant des légumes cultivés dans nos fermes sur les toits.",
+    description: "Nous avons mis sur pied un réseau de centaines de points de cueillette de quartier, pour livrer le plus directement possible aux Lufavores nos aliments et ceux de nos partenaires."
   },
   Cow: {
     // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    title: "Titre 3",
-    text: "Texte 3",
-    description: "Description 3"
+    title: "Bâtir un meilleur système alimentaire.",
+    text: "Un réseau de fermiers et de producteurs locaux",
+    description: "Les fermes sur les toits n’ont d’aucune façon l’intention de remplacer les fermes et les producteurs ruraux. Nous travaillons avec des partenaires qui partagent ces valeurs pour offrir aux citadins une sélection variée de produits."
   },
   FruitCherries: {
     // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    title: "Titre 4",
-    text: "Texte 4",
-    description: "Description 4"
+    title: "Une communauté locale de Lufavores",
+    text: "Participez à la création d’un système alimentaire durable.",
+    description:
+      `Lufa c'est
+      60 000 Lufavores,
+      20 000 paniers chaques semaines,
+      Plus de 100 points de cueillette de quartier,
+      Un réseau de fermiers et de producteurs locaux,
+      8 500 produits frais et locaux.`
   }
 };
 </script>
@@ -67,7 +74,7 @@ const iconInfo = {
 
         <div class="absolute w-full h-screen flex items-center px-4 z-10">
           <div class='w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black duration-500' :class="{'opacity-100': showCard, 'opacity-0': !showCard}">
-            <HoverCard v-if="hoveredIcon !== null" :img="iconInfo[hoveredIcon]?.img ?? ''" :title="iconInfo[hoveredIcon]?.title ?? ''" :text="iconInfo[hoveredIcon]?.text ?? ''" :description="iconInfo[hoveredIcon]?.description ?? ''" />
+            <HoverCard v-if="hoveredIcon !== null" :img="iconInfo[hoveredIcon]?.img ?? ''" :title="iconInfo[hoveredIcon]?.title ?? ''" :text="iconInfo[hoveredIcon]?.text ?? ''" :description="iconInfo[hoveredIcon]?.description ?? ''" :text2="iconInfo[hoveredIcon]?.text2 ?? ''" />
           </div>
           <div class='w-[500px] h-[700px] mr-20 bg-white rounded-xl text-black'>
             <div class='mx-auto p-10'>
