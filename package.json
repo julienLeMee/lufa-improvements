@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/light-js": "^0.2.63",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
     "vue-material-design-icons": "^5.2.0"
