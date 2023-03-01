@@ -57,8 +57,8 @@ const iconInfo = {
 <template>
   <div class='w-full h-screen'>
         <img class='absolute w-full h-full object-cover' src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="vegetables" />
-        <img class="absolute top-0 w-[120px] mt-10 ml-10 z-[100]" src="/images/lufa-logo.png" alt="lufa logo">
-        <div class='flex flex-col bg-[#79a032]/80 pt-10 z-40 items-center justify-center h-screen absolute'>
+        <img class="hidden lg:block absolute top-0 w-[120px] mt-10 ml-10 z-[100]" src="/images/lufa-logo.png" alt="lufa logo">
+        <div class='hidden lg:flex flex-col bg-[#79a032]/80 pt-10 z-40 items-center justify-center h-screen absolute'>
           <div class='rounded w-12 pt-2 mx-10 my-4 border-transparent border-b-4 hover:border-b-white duration-300' @mouseover="onIconHover('Basket'), showCard = true" @mouseleave="onIconLeave(), showCard = false">
             <Basket fillColor='#ffffff' :size='40' class="cursor-pointer flex items-center justify-center" />
           </div>
@@ -74,11 +74,11 @@ const iconInfo = {
         </div>
 
         <div class="absolute w-full h-screen flex items-center px-4 z-10">
-          <div class='w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black duration-500 relative' :class="{'opacity-100': showCard, 'opacity-0': !showCard}">
+          <div class='hidden lg:block w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black duration-500 relative' :class="{'opacity-100': showCard, 'opacity-0': !showCard}">
             <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-[#79a032] rounded-full w-80 h-80 blur-3xl opacity-30"></div>
             <HoverCard v-if="hoveredIcon !== null" :img="iconInfo[hoveredIcon]?.img ?? ''" :title="iconInfo[hoveredIcon]?.title ?? ''" :text="iconInfo[hoveredIcon]?.text ?? ''" :description="iconInfo[hoveredIcon]?.description ?? ''" :text2="iconInfo[hoveredIcon]?.text2 ?? ''" />
           </div>
-          <div class='w-[500px] h-[700px] mr-20 bg-white rounded-xl text-black'>
+          <div class='w-[500px] h-[700px] lg:mr-20 bg-white rounded-xl text-black'>
             <div class='mx-auto p-10'>
               <h1 class='text-3xl py-2'>Créer un compte</h1>
               <p class='text-sm'>Joignez-vous aux <span class="font-bold">60 756</span> Lufavores qui mangent frais, local et responsable.</p>
