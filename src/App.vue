@@ -20,21 +20,25 @@ function onIconLeave() {
 
 const iconInfo = {
   Basket: {
-    title: "Titre 1",
-    text: "Texte 1",
-    description: "Description 1"
+    // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    title: "Nos paniers hebdomadaires",
+    text: "Du Marché en ligne à votre panier, frais, local et responsable.",
+    description: "Votre abonnement vient avec un panier de base automatique hebdomadaire rempli de 30 $ de fruits et légumes de saison, mais vous avez toujours le choix de personnaliser votre commande ou de l’annuler jusqu’à minuit la veille de votre livraison."
   },
   Carrot: {
+    // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     title: "Titre 2",
     text: "Texte 2",
     description: "Description 2"
   },
   Cow: {
+    // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     title: "Titre 3",
     text: "Texte 3",
     description: "Description 3"
   },
   FruitCherries: {
+    // img: "https://images.unsplash.com/photo-1635774855717-0aec182f92cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     title: "Titre 4",
     text: "Texte 4",
     description: "Description 4"
@@ -63,7 +67,7 @@ const iconInfo = {
 
         <div class="absolute w-full h-screen flex items-center px-4 z-10">
           <div class='w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black duration-500' :class="{'opacity-100': showCard, 'opacity-0': !showCard}">
-            <HoverCard v-if="hoveredIcon !== null" :title="iconInfo[hoveredIcon]?.title ?? ''" :text="iconInfo[hoveredIcon]?.text ?? ''" :description="iconInfo[hoveredIcon]?.description ?? ''" />
+            <HoverCard v-if="hoveredIcon !== null" :img="iconInfo[hoveredIcon]?.img ?? ''" :title="iconInfo[hoveredIcon]?.title ?? ''" :text="iconInfo[hoveredIcon]?.text ?? ''" :description="iconInfo[hoveredIcon]?.description ?? ''" />
           </div>
           <div class='w-[500px] h-[700px] mr-20 bg-white rounded-xl text-black'>
             <div class='mx-auto p-10'>
