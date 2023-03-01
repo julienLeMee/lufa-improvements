@@ -43,12 +43,13 @@ const iconInfo = {
     title: "Une communauté locale de Lufavores",
     text: "Participez à la création d’un système alimentaire durable.",
     description:
-      `Lufa c'est
-      60 000 Lufavores,
-      20 000 paniers chaques semaines,
-      Plus de 100 points de cueillette de quartier,
-      Un réseau de fermiers et de producteurs locaux,
-      8 500 produits frais et locaux.`
+      `Lufa en quelques chiffres: <br><br>
+      <ul>
+        <li>Plus de <strong>60 000</strong> Lufavores,</li>
+        <li><strong>20 000</strong> paniers chaques semaines,</li>
+        <li>Plus de <strong>100</strong> points de cueillette de quartier,</li>
+        <li><strong>8 500</strong> produits frais et locaux.</li>
+      </ul>`
   }
 };
 </script>
@@ -73,7 +74,8 @@ const iconInfo = {
         </div>
 
         <div class="absolute w-full h-screen flex items-center px-4 z-10">
-          <div class='w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black duration-500' :class="{'opacity-100': showCard, 'opacity-0': !showCard}">
+          <div class='w-[400px] h-[500px] mx-auto bg-white rounded-xl text-black duration-500 relative' :class="{'opacity-100': showCard, 'opacity-0': !showCard}">
+            <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-[#79a032] rounded-full w-80 h-80 blur-3xl opacity-30"></div>
             <HoverCard v-if="hoveredIcon !== null" :img="iconInfo[hoveredIcon]?.img ?? ''" :title="iconInfo[hoveredIcon]?.title ?? ''" :text="iconInfo[hoveredIcon]?.text ?? ''" :description="iconInfo[hoveredIcon]?.description ?? ''" :text2="iconInfo[hoveredIcon]?.text2 ?? ''" />
           </div>
           <div class='w-[500px] h-[700px] mr-20 bg-white rounded-xl text-black'>
