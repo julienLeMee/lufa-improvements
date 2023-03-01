@@ -78,13 +78,13 @@ const iconInfo = {
           </div>
           <div class='w-[500px] h-[700px] mr-20 bg-white rounded-xl text-black'>
             <div class='mx-auto p-10'>
-              <h1 class='text-2xl py-2'>Créer un compte</h1>
+              <h1 class='text-3xl py-2'>Créer un compte</h1>
               <p class='text-sm'>Joignez-vous aux <span class="font-bold">60 756</span> Lufavores qui mangent frais, local et responsable.</p>
               <form class='w-full flex flex-col py-1'>
                 <div class="flex items-center justify-between">
                   <p>Prénom <span class="text-red-600">*</span></p>
                   <input
-                    class='p-2 my-2 border rounded'
+                    class='p-2 my-2 border rounded w-[60%]'
                     type="text"
                     placeholder='Nathalie'
                   />
@@ -92,7 +92,7 @@ const iconInfo = {
                 <div class="flex items-center justify-between">
                   <p>Nom <span class="text-red-600">*</span></p>
                   <input
-                    class='p-2 my-2 border rounded'
+                    class='p-2 my-2 border rounded w-[60%]'
                     type="text"
                     placeholder='Tremblay'
                   />
@@ -100,7 +100,7 @@ const iconInfo = {
                 <div class="flex items-center justify-between">
                   <p>Courriel <span class="text-red-600">*</span></p>
                   <input
-                    class='p-2 my-2 border rounded'
+                    class='p-2 my-2 border rounded w-[60%]'
                     type="email"
                     placeholder='exemple@mail.com'
                     autoComplete='email'
@@ -109,7 +109,7 @@ const iconInfo = {
                 <div class="flex items-center justify-between">
                   <p>Mot de passe <span class="text-red-600">*</span></p>
                   <input
-                    class='p-2 my-2 border rounded'
+                    class='p-2 my-2 border rounded w-[60%]'
                     type="password"
                     placeholder='onaimedonclesbourdons'
                     autoComplete='current-password'
@@ -118,7 +118,7 @@ const iconInfo = {
                 <div class="flex items-center justify-between">
                   <p>Téléphone <span class="text-red-600">*</span></p>
                   <input
-                    class='p-2 my-2 border rounded'
+                    class='p-2 my-2 border rounded w-[60%]'
                     type="tel"
                     placeholder='(514) 669-3559'
                   />
@@ -126,12 +126,12 @@ const iconInfo = {
                 <div class="flex items-center justify-between">
                   <p>Adresse <span class="text-red-600">*</span></p>
                   <input
-                    class='p-2 my-2 border rounded'
+                    class='p-2 my-2 border rounded w-[60%]'
                     type="address"
                     placeholder='3075 Boulevard Thimens, Ville Saint Laurent'
                   />
                 </div>
-                <p class="text-sm">
+                <p class="text-sm pt-2">
                   <span class="font-bold">Pas de téléphone cellulaire?</span> Contactez notre service à la clientèle à l’aide de notre <span class="text-[#79a032] cursor-pointer">formulaire de contact</span>  pour terminer votre inscription.
                 </p>
                 <div class="flex items-center mx-auto w-[50%] pt-4">
