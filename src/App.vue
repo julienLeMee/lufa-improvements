@@ -71,6 +71,7 @@ const iconInfo = {
           <div class='rounded w-12 pt-2 mx-10 my-4 border-transparent border-b-4 hover:border-b-white duration-300' @mouseover="onIconHover('FruitCherries'), showCard = true" @mouseleave="onIconLeave(), showCard = false">
             <FruitCherries fillColor='#ffffff' :size='40' class="cursor-pointer flex items-center justify-center" />
           </div>
+          <a href="https://old-voice-5044.fly.dev/" class="text-center w-[70%] mx-auto text-[#79a032] mt-6 py-2 rounded cursor-pointer bg-white hover:bg-[#79a032] hover:text-white border">Reviews</a>
         </div>
 
         <div class="absolute w-full h-screen flex items-center px-4 z-10">
